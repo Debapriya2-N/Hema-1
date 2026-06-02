@@ -1,0 +1,326 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zandu Balm Detection System</title>
+
+<style>
+
+body{
+background:linear-gradient(135deg,#ffb6c1,#ffc0cb,#ffd1dc);
+font-family:monospace;
+text-align:center;
+padding-top:80px;
+}
+
+h1{
+font-size:38px;
+color:#d6336c;
+}
+
+#terminal{
+width:70%;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 0 15px rgba(0,0,0,0.2);
+font-size:18px;
+text-align:left;
+min-height:200px;
+}
+
+button{
+margin-top:20px;
+padding:12px 25px;
+font-size:18px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+#start{
+background:#ff4d6d;
+color:white;
+}
+
+#yes{
+background:#ff4d6d;
+color:white;
+}
+
+#no{
+background:#888;
+color:white;
+}
+
+#comment{
+margin-top:20px;
+font-size:20px;
+color:#444;
+font-weight:bold;
+}
+
+.appreciation{
+max-width:900px;
+margin:30px auto;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,0.15);
+line-height:1.8;
+text-align:left;
+font-size:18px;
+color:#444;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Zandu Balm Detection System 🌸</h1>
+
+<div id="terminal">
+System Ready...
+<br>
+Click Start to Analyze Hema.
+</div>
+
+<button id="start">Run Analysis</button>
+
+<div id="comment"></div>
+
+<script>
+
+const terminal = document.getElementById("terminal");
+const startBtn = document.getElementById("start");
+
+const lines = [
+
+"Initializing Teammate Analysis...",
+
+"Connecting to Seventh Sense Talent Solution...",
+
+"Scanning L&D Operations Team...",
+
+"Employee Found: Hema 🌸",
+
+"Checking Team Collaboration Records...",
+
+"Reviewing Daily Interactions...",
+
+"Analyzing Annoyance Level...",
+
+"Processing...",
+
+"Processing...",
+
+"RESULT FOUND.",
+
+"",
+
+"Hema Analysis Report:",
+
+"",
+
+"Role: L&D Operations 🚀",
+
+"Support Level: Excellent",
+
+"Work Commitment: Outstanding",
+
+"Team Contribution: High",
+
+"",
+
+"Special Observation:",
+
+"Sometimes Annoys Debapriya 😑",
+
+"Sometimes Acts Like Zandu Balm 🤕",
+
+"Sometimes Wins Every Argument 😒",
+
+"",
+
+"Positive Traits Detected:",
+
+"✓ Helpful",
+
+"✓ Reliable",
+
+"✓ Hardworking",
+
+"✓ Supportive",
+
+"✓ Good Human Being",
+
+"",
+
+"Friendship Score: 100% ❤️",
+
+"",
+
+"System Recommendation:",
+
+"Keep Hema in the team forever 😄"
+
+];
+
+let i = 0;
+
+startBtn.onclick = function(){
+
+startBtn.style.display="none";
+
+const interval = setInterval(function(){
+
+if(i < lines.length){
+
+terminal.innerHTML += "<br>"+lines[i];
+i++;
+
+}else{
+
+clearInterval(interval);
+
+terminal.innerHTML += `
+
+<br><br>
+
+<b>Final Decision Request:</b>
+
+<br><br>
+
+Should Hema officially be declared the most annoying yet valuable teammate? 😆
+
+<br><br>
+
+<button id="yes">YES 😂</button>
+<button id="no">NO 🤔</button>
+
+`;
+
+setupButtons();
+
+}
+
+},800);
+
+};
+
+const funnyComments = [
+
+"System already knows the answer 😄",
+
+"Zandu Balm detected 🤕",
+
+"Annoyance level increasing 📈",
+
+"But still a great teammate ❤️",
+
+"Team refuses to remove Hema 😂",
+
+"System recommends YES ✅"
+
+];
+
+let commentIndex = 0;
+```
+```html id="u4q6m1"
+function setupButtons(){
+
+const noBtn = document.getElementById("no");
+const comment = document.getElementById("comment");
+
+noBtn.addEventListener("mouseover",function(){
+
+const x=Math.random()*(window.innerWidth-180);
+const y=Math.random()*(window.innerHeight-100);
+
+noBtn.style.position="absolute";
+noBtn.style.left=x+"px";
+noBtn.style.top=y+"px";
+
+comment.innerText =
+funnyComments[commentIndex % funnyComments.length];
+
+commentIndex++;
+
+});
+
+document.getElementById("yes").onclick=function(){
+
+document.body.innerHTML=`
+
+<h1 style="color:#d6336c">
+🎉 Analysis Confirmed 🎉
+</h1>
+
+<h2>
+Hema 🌸
+</h2>
+
+<h3>
+Officially Certified:
+Most Annoying Yet Valuable Teammate 😆
+</h3>
+
+<div class="appreciation">
+
+<h2 style="text-align:center;color:#d6336c;">
+A Note of Appreciation
+</h2>
+
+<p>
+Dear Hema,
+</p>
+
+<p>
+This analysis was created mostly for fun, but the appreciation behind it is genuine.
+</p>
+
+<p>
+Over time, you've become one of those teammates who somehow manages to be both helpful and annoying at the same time 😄.
+</p>
+
+<p>
+Whether it's discussions, debates, reminders, or random moments where I end up calling you "Zandu Balm," you've definitely made work more interesting.
+</p>
+
+<p>
+Jokes aside, your dedication to L&D Operations, your willingness to help, and your commitment to the team are genuinely appreciated.
+</p>
+
+<p>
+You're hardworking, dependable, and someone people can count on when things need to get done.
+</p>
+
+<p>
+Thank you for all the support, teamwork, and positive contributions you bring every day.
+</p>
+
+<p>
+Wishing you continued success, happiness, and many more opportunities to annoy everyone professionally. 😆
+</p>
+
+<p>
+With Appreciation,
+<br><br>
+<b>Debapriya Nayak</b>
+</p>
+
+</div>
+
+`;
+
+};
+
+}
+
+</script>
+
+</body>
+</html>
+```
