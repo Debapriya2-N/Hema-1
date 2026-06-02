@@ -1,118 +1,151 @@
 ```javascript
-const terminal = document.getElementById("terminal");
-const startBtn = document.getElementById("start");
-
 const lines = [
-"Initializing Teammate Analysis...",
+
+"Initializing Zandu Balm Detection System...",
+
 "Connecting to Seventh Sense Talent Solution...",
+
 "Scanning L&D Operations Team...",
-"Employee Found: Hema 🌸",
-"Checking Team Collaboration Records...",
-"Reviewing Daily Interactions...",
-"Analyzing Annoyance Level...",
+
+"Target Found: Hema 🌸",
+
+"Checking Daily Annoyance Level...",
+
+"Analyzing Team Interactions...",
+
+"Reviewing Argument History...",
+
 "Processing...",
+
 "Processing...",
+
 "RESULT FOUND.",
+
 "",
+
 "Hema Analysis Report:",
+
 "",
+
 "Role: L&D Operations 🚀",
+
+"",
+
+"Zandu Balm Level: 99% 🤕",
+
+"Argument Winning Rate: 100% 😒",
+
+"Reminder Frequency: Unlimited ♾️",
+
+"Ability To Irritate Debapriya: Exceptional 😑",
+
+"",
+
+"Ability To Help Team: Exceptional ❤️",
+
+"Work Commitment: Outstanding 🌟",
+
 "Support Level: Excellent",
-"Work Commitment: Outstanding",
-"Team Contribution: High",
+
+"Dependability Rating: High",
+
 "",
-"Special Observation:",
-"Sometimes Annoys Debapriya 😑",
-"Sometimes Acts Like Zandu Balm 🤕",
-"Sometimes Wins Every Argument 😒",
+
+"System Confused...",
+
 "",
+
 "Positive Traits Detected:",
+
 "✓ Helpful",
-"✓ Reliable",
+
 "✓ Hardworking",
+
+"✓ Reliable",
+
 "✓ Supportive",
+
 "✓ Good Human Being",
+
 "",
-"Friendship Score: 100% ❤️",
+
+"Final Verdict:",
+
+"Despite being a certified Zandu Balm 🤕",
+
+"Hema remains one of the most valuable teammates ❤️",
+
 "",
+
 "System Recommendation:",
-"Keep Hema in the team forever 😄"
+
+"Do NOT remove from team 😄"
+
 ];
+```
 
-let i = 0;
+Replace the final question with:
 
-startBtn.addEventListener("click", function(){
-
-startBtn.style.display = "none";
-
-const interval = setInterval(function(){
-
-if(i < lines.length){
-
-terminal.innerHTML += "<br>" + lines[i];
-i++;
-
-}else{
-
-clearInterval(interval);
-
+```javascript
 terminal.innerHTML += `
+
 <br><br>
-<b>Final Decision Request:</b>
+
+<b>Final Certification Request:</b>
+
 <br><br>
-Should Hema officially be declared the most annoying yet valuable teammate? 😆
+
+Should Hema officially be recognized as:
+
+<br><br>
+
+🤕 Chief Zandu Balm Officer
+
+<br>
+
+&
+
+<br>
+
+🌸 Most Valuable Teammate
+
 <br><br>
 
 <button id="yes">YES 😂</button>
 <button id="no">NO 🤔</button>
+
 `;
+```
 
-setupButtons();
+Replace funny comments with:
 
-}
-
-},800);
-
-});
-
+```javascript
 const funnyComments = [
-"System already knows the answer 😄",
+
 "Zandu Balm detected 🤕",
+
+"Argument incoming ⚠️",
+
+"Hema disagrees 😑",
+
+"System recommends YES 😂",
+
 "Annoyance level increasing 📈",
+
 "But still a great teammate ❤️",
-"Team refuses to remove Hema 😂",
-"System recommends YES ✅"
+
+"Team refuses to remove Hema 😆"
+
 ];
+```
 
-let commentIndex = 0;
+Replace the YES button content with:
 
-function setupButtons(){
-
-const noBtn = document.getElementById("no");
-const comment = document.getElementById("comment");
-
-noBtn.addEventListener("mouseover", function(){
-
-const x = Math.random() * (window.innerWidth - 150);
-const y = Math.random() * (window.innerHeight - 100);
-
-noBtn.style.position = "absolute";
-noBtn.style.left = x + "px";
-noBtn.style.top = y + "px";
-
-comment.innerText =
-funnyComments[commentIndex % funnyComments.length];
-
-commentIndex++;
-
-});
-
-document.getElementById("yes").addEventListener("click", function(){
-
+```javascript
 document.body.innerHTML = `
 
 <h1 style="color:#d6336c">
-🎉 Analysis Confirmed 🎉
+🎉 Certification Approved 🎉
 </h1>
 
 <h2>
@@ -120,43 +153,41 @@ Hema 🌸
 </h2>
 
 <h3>
-Officially Certified:
-Most Annoying Yet Valuable Teammate 😆
+Chief Zandu Balm Officer 🤕
+<br>
+&
+<br>
+Most Valuable Teammate ❤️
 </h3>
 
-<div style="
-max-width:900px;
-margin:30px auto;
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 0 15px rgba(0,0,0,0.15);
-line-height:1.8;
-text-align:left;
-font-size:18px;
-color:#444;
-">
+<div class="appreciation">
 
 <h2 style="text-align:center;color:#d6336c;">
-A Note of Appreciation
+Official Appreciation Note
 </h2>
 
-<p>Dear Hema,</p>
-
 <p>
-This analysis was created mostly for fun, but the appreciation behind it is genuine.
+Dear Hema,
 </p>
 
 <p>
-Whether it's discussions, debates, reminders, or random moments where I end up calling you "Zandu Balm," you've definitely made work more interesting.
+This analysis was created mostly for fun, but the appreciation behind it is completely genuine.
 </p>
 
 <p>
-Jokes aside, your dedication to L&D Operations, your willingness to help, and your commitment to the team are genuinely appreciated.
+You somehow manage to be one of the most helpful and one of the most annoying people at the same time 😄.
 </p>
 
 <p>
-You're hardworking, dependable, and someone people can count on when things need to get done.
+Whether it's reminders, discussions, arguments, or those moments that make me call you "Zandu Balm," you've definitely made work more interesting.
+</p>
+
+<p>
+Jokes aside, your dedication to L&D Operations, your willingness to support others, and your commitment to getting things done are genuinely appreciated.
+</p>
+
+<p>
+You are hardworking, dependable, and someone the team can count on.
 </p>
 
 <p>
@@ -164,7 +195,7 @@ Thank you for all the support, teamwork, and positive contributions you bring ev
 </p>
 
 <p>
-Wishing you continued success, happiness, and many more opportunities to annoy everyone professionally. 😆
+Wishing you continued success, happiness, and many more opportunities to professionally annoy everyone. 😆
 </p>
 
 <p>
@@ -173,9 +204,6 @@ With Appreciation,<br><br>
 </p>
 
 </div>
+
 `;
-
-});
-
-}
 ```
